@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: "Poppins" , sans-serif;
+    background-image: linear-gradient(orange,darkgreen);
+    background-attachment:fixed;
+    background-size: 100% 210%;
+    padding-left: 5px;
+    padding-right:5px;
+}
+a,button{
+    font-family: "Poppins" , sans-serif;
+}
+.klizućiMeniji{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    background-image: linear-gradient(rgb(228, 145, 89),orange);
+}
+.nešto1 , .nešto2,.nešto3,#deoSlika{
+    position: relative;
+}
+.nešto1 ul,.nešto2 ul ,.nešto3 ul{
+    position: absolute;
+    margin-top: 10px;
+    width:200px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    border-radius: 5px;
+    opacity:0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 1s ease;
+}
+.nešto1 a , .nešto2 a , .nešto3 a {
+    color: black;
+    text-decoration: none;
+}
+.klizućiMeniji button , .home{
+    background:none;
+    border: none;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    cursor:pointer;
+}
+.klizućiMeniji button:hover,.home:hover{
+    color: rgb(102, 255, 0);
+}
+.nešto1 li , .nešto2 li , .nešto3 li {
+    background-image: linear-gradient(rgb(228, 145, 89),orange);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nešto1 li :hover ,.nešto2 li :hover,.nešto3 li :hover{
+    color:green;
+}
+.nešto1 button:focus+ul,.nešto2 button:focus+ul,.nešto3 button:focus+ul,ul:hover{
+    opacity:1;
+    pointer-events: all;
+    transform:translateY(0px);
+}
+#dugmeSlika{
+    width: 200px;
+    height: 70px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+#dugmeSlika img{
+    width: 100%;
+    height: 100%;
+}
+.kamp1, .kamp2,#dodatno{
+    background-color: lightyellow;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-height: 100%;
+}
+
+.kamp1,.kamp2{
+    margin-bottom: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.center1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+p{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 70%;
+}
+
+ul{
+    list-style-position: inside;
+    text-align: left;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#more, #lista1,#više{
+    display: none;
+}
+
+#more1,#lista2{
+    display:none;
+}
+
+#myBtn, #myBtn1,#dugme3{
+    width: 12.5%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom right, rgb(230, 248, 230),rgb(5, 201, 5));
+}
+
+.slideshow-container, .slideshow-container1,.slideshow-container2 {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides, .mySlides1,.mySlides2 {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color:black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot, .dot1,.dot2 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover, .dot1:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.slike, .slike1{
+    max-height: 250px;
+    max-width: 100%;
+}
+#lista1,#lista2{
+    padding-top: 50px;
+}
+.kamp1,.kamp2,#dodatno{
+    padding-top: 25px;
+}
+img{
+    max-width: 75%;
+}
+nav li{
+    text-align: center;
+    border-radius: 10px;
+}

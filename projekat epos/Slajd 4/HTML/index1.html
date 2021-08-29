@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma</title>
+    <link rel="stylesheet" href="../CSS/style1.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../Slike/Ikonica.png">
+</head>
+<body>
+    <!--Menu-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../JQuery/script.js"></script>
+    <nav data-aos="fade">
+        <div class="klizućiMeniji"> 
+            <button><a href="../../Slajd 1/HTML/index.html" class="home">Početna</a></button>
+            <div class="nešto1">
+                <button>Opis</button>
+                <ul>
+                    <li><a href="../../Slajd 2/HTML/O nama.html">O nama</a></li>
+                    <li><a href="../../Slajd 2/HTML/O nama.html#istorija1">Istorija</a></li>
+                    <li><a href="../../Slajd 2/HTML/O nama.html#dečijiKamp2">Dečiji sportski kamp</a></li>
+                    <li><a href="../../Slajd 2/HTML/O nama.html#dugme">Galerija</a></li>
+                </ul>
+            </div>
+            <div class="nešto2">
+                <button>Ponuda</button>
+                <ul>
+                    <li><a href="../../Slajd 3/HTML/kampovi.html">Kampovi</a></li>
+                    <li><a href="../../Slajd 3/HTML/kampovi.html#kamp1">Zimski kamp</a></li>
+                    <li><a href="../../Slajd 3/HTML/kampovi.html#kamp2">Letnji kamp</a></li>
+                    <li><a href="../../Slajd 3/HTML/kampovi.html#dodatno">Vrnjački karneval</a></li>
+                </ul>
+            </div>
+            <div class="nešto3">
+                <button>Kontakt</button>
+                <ul>
+                    <li><a href="index1.html">Prijava</a></li>
+                    <li><a href="#">Privatnost podataka</a></li>
+                    <li><a href="#">Potrebna dokumentacija<br>za prijem u kamp</a></li>
+                    <li><a href="#">Svrha kampa</a></li>
+                </ul>
+            </div>
+            <div id="deoSlika">
+                <button id="dugmeSlika"><img id="slika" src="../Slike/Logo.png"></img></button>
+            </div>
+        </div>
+    </nav>
+    <!--Forma-->
+    <form id="forma1">
+        <div class="stavke">
+            <div id="polovina1">
+                <div class="ime kontrola" >
+                    <label for="imep">Ime :</label>
+                    <input type="text" id="imep" class="upis" >
+                    <div><small>Poruka za grešku</small></div>
+                </div>
+                <br>
+                <div class="prezime kontrola" >
+                    <label for="prezimep">Prezime :</label>
+                    <input type="text" id="prezimep" class="upis" >
+                    <div><small>Poruka za grešku</small></div>
+                </div>
+                <br>
+                <div class="pol">
+                    <label for="pol">Pol :</label>
+                        <div>
+                            <input type="radio" name="pol" class="pold">Muški
+                        </div>
+                        <div>
+                            <input type="radio" name="pol" class="pold">Ženski
+                        </div>
+                </div>
+                <br>
+                <div class="datum kontrola">
+                    <label for="datum">Datum rođenja :</label>
+                    <input type="date" id="datum" class="upis">
+                    <div><small>Poruka za grešku</small></div>
+                </div>
+                <br>
+                <div class="kamp" >
+                    <label for="kampovi">Izaberite kamp (može više opcija):</label>
+                    <br>
+                    <br>
+                    <div>
+                        <input id="kampovi" type="checkbox" class="kampd">Letnji kamp
+                    </div>
+                    <div>
+                        <input id="zkampovi" type="checkbox" class="kampd">Zimski kamp
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div id="polovina2">
+                <div id="oprema" >
+                        <label for="potrebno">
+                            Potrebna oprema (zimski kamp):<br>
+                            <ul>
+                                <li>Skije</li>
+                                <li>Pancerice</li>
+                                <li>Kaciga</li>
+                                <li>Naočare</li>
+                            </ul>
+                        </label>
+                    <br>
+                    <label for="oprema">Da li je potrebna oprema ?</label>
+                    <div>
+                        <input type="radio" id="oprema" class="opremad" name="oprema1">Jeste
+                    </div>
+                    <div>
+                        <input type="radio" class="opremad" name="oprema1">Nije
+                    </div>
+                </div>
+                <br>
+                <br>
+                <button class="dugmići" id="potvrdi">Potvrdi</button>
+                <button type="reset" class="dugmići" >Izbriši sve</button>
+            </div>
+        </div>
+            <div class="stavke">
+                <div id="polovina3">
+                        <div>
+                            <label for="lista12">Lista zimskih kampova :</label>
+                            <br>
+                            <br>
+                            <ol>
+                                <li><input id="lista12" type="checkbox" class="ztermin">termin 1-9. januara</li>
+                                <li><input type="checkbox" class="ztermin">termin 1-8. februara</li>
+                                <li><input type="checkbox" class="ztermin">termin 9-16 februara</li>
+                            </ol>
+                        </div>
+                </div>
+                <div id="polovina4">
+                    <div>
+                        <label for="lista2">Lista letnjih kampova :</label>
+                        <ol>
+                            <section>
+                                <li><input id="lista2" type="checkbox" class="ltermin">termin 15-22. juna</li>
+                                <li><input type="checkbox" class="ltermin">termin 23-30. juna</li>
+                                <li><input type="checkbox" class="ltermin">termin 1-8. jula</li>
+                                <li><input type="checkbox" class="ltermin">termin 9-16. jula</li>
+                            </section>
+                            <section>
+                                <li><input type="checkbox" class="ltermin">termin 17-23. jula</li>
+                                <li><input type="checkbox" class="ltermin">termin 24-31. jula</li>
+                                <li><input type="checkbox" class="ltermin">termin 1-8. avgusta</li>
+                                <li><input type="checkbox" class="ltermin">termin 9-15. avgusta</li>
+                            </section>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+    </form>
+    <div id="dugmeZaSlike">
+    <button onclick="funkcijaSlike()" >Promeni sliku</button>
+    </div>
+    <!--Slike za pozasinu slajda-->
+    <div id="slike">
+        <img src="../Slike/jeffrey-workman-19042-unsplash.jpg" class="slike">
+        <img src="../Slike/josh-hild-787274-unsplash.jpg" class="slike">
+        <img src="../Slike/busse-lommers-680857-unsplash.jpg" class="slike">
+        <img src="../Slike/jeremy-ricketts-9573-unsplash.jpg" class="slike">
+        <img src="../Slike/hugues-de-buyer-mimeure-335733-unsplash.jpg" class="slike">
+        <img src="../Slike/ian-mcgrory-924804-unsplash.jpg" class="slike">
+        <img src="../Slike/jerome-prax-57765-unsplash.jpg" class="slike">
+    </div>
+    <!--Skripte-->
+    <script src="../Javascript/script.js"></script>
+</body>
+</html>

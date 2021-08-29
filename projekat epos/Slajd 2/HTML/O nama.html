@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nama</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="../CSS/style.css" type="text/css">
+<link rel="shortcut icon" href="../Slike/Ikonica.png">
+
+<body>
+    <!--meni-->
+    <nav>
+        <div class="klizućiMeniji"> 
+            <button><a href="../../Slajd 1/HTML/index.html" class="home">Početna</a></button>
+            <div class="nešto1">
+                <button>Opis</button>
+                <ul>
+                    <li><a href="O nama.html">O nama</a></li>
+                    <li><a href="O nama.html#istorija1">Istorija</a></li>
+                    <li><a href="O nama.html#dečijiKamp2">Dečiji sportski kamp</a></li>
+                    <li><a href="O nama.html#dugme">Galerija</a></li>
+                </ul>
+            </div>
+            <div class="nešto2">
+                <button>Ponuda</button>
+                <ul>
+                    <li><a href="../../Slajd 3/HTML/kampovi.html">Kampovi</a></li>
+                    <li><a href="../../Slajd 3/HTML/kampovi.html#kamp1">Zimski kamp</a></li>
+                    <li><a href="../../Slajd 3/HTML/kampovi.html#kamp2">Letnji kamp</a></li>
+                    <li><a href="../../Slajd 3/HTML/kampovi.html#dodatno">Vrnjački karneval</a></li>
+                </ul>
+            </div>
+            <div class="nešto3">
+                <button>Prijava</button>
+                <ul>
+                    <li><a href="../../Slajd 4/HTML/index1.html">Forma</a></li>
+                    <li><a href="#">Privatnost podataka</a></li>
+                    <li><a href="#">Privatnost podataka</a></li>
+                    <li><a href="#">Potrebna dokumentacija<br>za prijem u kamp</a></li>
+                    <li><a href="#">Svrha kampa</a></li>
+                </ul>
+            </div>
+            <div id="deoSlika">
+            <button id="dugmeSlika"><img id="slika" src="../Slike/Logo.png"></img></button>
+            </div>
+        </div>
+    </nav>
+
+    <!--JQuery UI-->
+    <div class="accordion">
+        <h3 id="istorija1">Istorija</h3>
+        <div class="d1">
+            <section>
+            <p>Sve je počelo davne 1976. godine. Kada su pre više od tri decenije sportski radnici dosli na ideju o
+                otvaranju sportskog kampa, malo ko je verovao da ce sve ovo potrajati ovoliko.
+                Na našim terenima svoj trag je ostavilo preko 25 000 dece i trenera.
+                Našu istoriju pisali su mnogi treneri kao što su: </p>
+            <ul>
+                <li>Bratislav Đorđević</li>
+                <li>Božidar Maljković</li>
+                <li>Borivoje Cenić</li>
+                <li>Svetislav Pešić</li>
+                <li>Željko Obradović</li>
+            </ul>
+            <p> Naš kamp je radionica koja ne staje pa verujemo da ćemo u budućnosti morati da dodamo ovde mnogo više
+                imena.</p>
+            </section>
+        </div>
+
+
+
+        <h3 id="dečijiKamp2">Dečiji sportski kamp"Sportifico"</h3>
+        <div class="d2">
+            <section>
+            <p>
+                Sportski kamp "Sportifico" je škola druženja, zajedničkog zivljenja mladih. Potpuno novo iskustvo jer se u njemu
+                oplemenjuju učenje, igra, takmičenje, zabava, rekreacija.
+                Kampovi su nezaboravna iskustva, kao i ekskurzije, kojih se sećamo do kraja života, samo još malo bolja,
+                jer
+                na
+                njih idu deca koja koja su zaljubljenici u istu igru. Naš zadatak je da tako bude i sa Vašim detetom.
+                Cilj boravka je doživljaj sedmodnevnog sportskog života, koji je skoro sve vreme u trenažnoj grupi. To
+                je
+                dodatna prilika da se bude zapažen za takmičarske selekcije kluba (na kamp idu treneri koji obavljaju
+                prvu
+                selekciju dece za predpionirske ekipe), da se trenrira dva puta dnevno, da se prihvate osnovna načela
+                sporta, da
+                se proba i nauči nešto novo iz odbojke, da se uči od više trenera, prilika za nova poznanstva i
+                druženja, za razvoj komunikacionih veština, a sve uz sportsku tu magičnu igru koji svi volimo i koja nas spaja. Sve
+                to je praćeno dobrom zabavom i sigurnošću polaznika, za šta je zadužen poseban tim trenera, osoblja hotela,
+                lekara,animatora. Neki će možda prvi put namestiti svoj krevet, biti tačni u ispunjavanju dnevnih obaveza,
+                imati osećaj odgovornosti prema drugima iz ekipe, pojesti sve iz tanjira, možda jesti repete, odvojiti se od
+                porodice,opustiti se i pokazati šta znaju ili otkriti svoj novi talenat. 
+            </p>
+        </section>
+        </div>
+    </div>
+    <!--slike u galeriji-->
+    <div>
+        <h3><button id="dugme" onclick="funkcija1()">Galerija</button></h3>
+            <span class="divSlika" id="divSlika1">
+                <div id="prviPar">
+                    <img src="../Slike/slika1.jpg">
+                    <img src="../Slike/slika2.jpg">
+                </div>
+                <div id="drguiPar">
+                    <img src="../Slike/slika3.jpg">
+                    <img src="../Slike/slika4.jpg">
+                </div>
+                <div id="trećiPar">
+                    <img src="../Slike/slika5.jpg">
+                    <img src="../Slike/slika6.jpg">
+                </div>
+                <div id="četvrtiPar">
+                    <img src="../Slike/slika7.jpg">
+                    <img src="../Slike/slika8.jpg">
+                </div>
+            </span>
+        </div>
+        <!--Slike na stranici-->
+    <div class="slike" id="slike10" data-aos="fade">
+
+        <img src="../Slike/Srecko_sa_polaznicima_sportskog_kampa (2).jpg">
+
+        <img src="../Slike/unnamed.jpg">
+    </div>
+        <!--Dugme za animacjiu padanje loptica-->
+    <div id="dugmeAnimacija">
+        <button id="lopta" onclick="f1()">Click here!</button>
+    </div>
+    <script src="../JQuery/script.js"></script>
+    <script src="../Javascript/script1.js"></script>
+</body>
+
+</html>

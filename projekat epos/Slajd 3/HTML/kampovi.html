@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../Slike/Ikonica.png">
+    <title> Ponuda </title>
+</head>
+<body>
+    <!--Menu-->
+    <nav data-aos="fade">
+        <div class="klizućiMeniji"> 
+            <button><a href="../../Slajd 1/HTML/index.html" class="home">Početna</a></button>
+            <div class="nešto1">
+                <button>Opis</button>
+                <ul>
+                    <li><a href="../../Slajd 2/HTML/O nama.html">O nama</a></li>
+                    <li><a href="../../Slajd 2/HTML/O nama.html#istorija1">Istorija</a></li>
+                    <li><a href="../../Slajd 2/HTML/O nama.html#dečijiKamp2">Dečiji sportski kamp</a></li>
+                    <li><a href="../../Slajd 2/HTML/O nama.html#dugme">Galerija</a></li>
+                </ul>
+            </div>
+            <div class="nešto2">
+                <button>Ponuda</button>
+                <ul>
+                    <li><a href="kampovi.html">Kampovi</a></li>
+                    <li><a href="kampovi.html#kamp1">Zimski kamp</a></li>
+                    <li><a href="kampovi.html#kamp2">Letnji kamp</a></li>
+                    <li><a href="kampovi.html#dodatno">Vrnjački karneval</a></li>
+                </ul>
+            </div>
+            <div class="nešto3">
+                <button>Prijava</button>
+                <ul>
+                    <li><a href="../../Slajd 4/HTML/index1.html">Forma</a></li>
+                    <li><a href="#">Privatnost podataka</a></li>
+                    <li><a href="#">Potrebna dokumentacija<br>za prijem u kamp</a></li>
+                    <li><a href="#">Svrha kampa</a></li>
+                </ul>
+            </div>
+                <div id="deoSlika">
+                    <span>
+                        <button id="dugmeSlika"><img src="../Slike/Logo.png">
+                        </button>
+                    </span>
+                </div>
+        </div>
+    </nav> 
+    <!--Odeljak 1-->
+    <section>
+        <div class="kamp1" id="kamp1"> 
+            <h2> Zimski kamp </h2>
+            <br>
+            <br>
+            <p> 
+                Kao sto mu i samo ime kaze ovaj kamp je fokusiran na zimske sportove, pre svih skijanje. Ucesnici ovog kapma 
+                provesce sedam nezaboravnih dana na prelepom Kopaoniku.<span id="dots">...</span>
+                <span id="more"> 
+                    Deca ce dane uglavnom provoditi na stazi gde ce im drustvo pravite ski-instruktori koji ce ih uvesti u sve tajne ovog prelepog sporta. Svakom detetu 
+                    ce biti obezbedjena kompletna oprema za skijanje koja ce biti ukljucena u ukupnu cenu kao i ski pass. Pored skijanja
+                    deca ce imati slobodno vreme za uzivanje u svim atrakcijama Kopaonika kao sto su bob na sinama, avantura park,
+                    nocno sankanje na stazi Karaman Greben, kuglana koja se nalazi u sklopu hotela "Grand" itd. Za one koji ne 
+                    skijaju bice smisljen drugaciji program koji ce obuhvatati setnje po prelipim predelima ove planine.
+                    
+                    Smestaj ce biti obezbedjen u odmaralistu "Masinac", koje se nalazi uz istomenu stazu. Deci ce u okviru smestaja 
+                    biti obezbedjana sva tri obroka. Kamp ce se odrzati u tri smene koje su napravljene prema skolskom raspustu: 
+                    <div id="lista1">
+                        <ul>
+                            <li> Prva smena: 2-9 januara </li>
+                            <li> Druga smena: 1-8 februara </li>
+                            <li> Treca smena: 9-16 februara </li>
+                        </ul>
+                    </div>
+                </span>
+            </p>
+            <br>
+            <button onclick="myFunction()" id="myBtn"> Read more </button>
+            <br>
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img src="../Slike/ski kamp.jpg"  class="slike">
+                        <div class="text">Kopaonik</div>
+                </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="../Slike/masinac.jpg" class="slike" >
+                        <div class="text">Masinac</div>
+                </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="../Slike/masinacSoba.jpg" class="slike">
+                        <div class="text">Hotelske sobe</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../Slike/Bob-na-sinama.jpg" class="slike">
+                        <div class="text">Zabava</div>
+                    </div>
+
+                </div>
+            
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+
+        </div>
+        <!--Odeljak 2-->
+        <div class="kamp2" id="kamp2">
+            <h2> Letnji kamp </h2>
+            <br>
+            <br>
+            <p> 
+                Za razliku od zimskog, ovaj letnji kamp nece biti odrzan na Kopaonik, vec na Srebrnom jezeru.<span id="dots1">...</span> 
+            <span id="more1"> 
+                U skplopu kampa deca ce imati priliku da izaberu jedan od ponudjenih sportova: fudbal, kosarka, tenis, odbojka ili rukomet.
+                Na osnovu broja prijava deca ce biti podeljena u grupe za treninge. Deca ce svaki dan imati treninge pre podne, dok ce poslebodne 
+                imati slobodno vreme. Svakom detetu ce biti obezbedjena adekvtana oprema za trening. Jedan dan ce biti organizovan mini izlet 
+                koji obuhvata krsarenjem dunavom i obilazak najvaznijih sponika u Djerdapskoj klisuru poput Golubacke tvrdjave, 
+                Lepenskog Vira i Trajanove table.
+
+                Smestaj ce biti obezbedjen u decijem odmaralistu "Srebrno jezero" koje nudi mnoge pogodnosti poput sportskih terena,
+                mini igraonice i bazena koji ce im verovatno privuci najvise paznje. Deci se biti obezbedjena tri obroka dnevno i mini
+                uzine ako bude bilo neophodno. Kamp ce biti organizovan u osam smena:
+            
+            <div id = "lista2"> 
+                    <ul>
+                        <li> Prva smena: 15-22 juna </li>
+                        <li> Druga smena: 23-30 juna</li>
+                        <li> Treca smena: 1-8 jula</li>
+                        <li> Cetvrta smena: 9-16 jula</li>
+                        <li> Peta smena: 17-23 jula</li>
+                        <li> Sesta smena: 24-31 jula</li>
+                        <li> Sedma smena: 1-8 avgusta</li>
+                        <li> Osma smena: 9-15 avgusta</li>
+                    </ul>
+            </div>
+            </span>
+            </p>
+            <br>
+            <button onclick="myFunction1()" id="myBtn1"> Read more </button>
+            <br>
+                <div class="slideshow-container1">
+
+                    <div class="mySlides1 fade">
+                        <img src="../Slike/letnji kamp.jpg" class="slike1">
+                        <div class="text">Druzenje</div>
+                </div>
+                    
+                    <div class="mySlides1 fade">
+                        <img src="../Slike/Sportski tereni.jpg" class="slike1">
+                        <div class="text">Sportski tereni</div>
+                </div>
+                    
+                    <div class="mySlides1 fade">
+                        <img src="../Slike/Srebrno-Jezero.jpg" class="slike1">
+                        <div class="text">Srebrno jezero</div>
+                    </div>
+
+                    <div class="mySlides1 fade">
+                        <img src="../Slike/đerdap.jpg" class="slike1">
+                        <div class="text">Izleti</div>
+                    </div>
+
+                </div>
+                <div style="text-align:center">
+                    <span class="dot1" onclick="currentSlide(1)"></span>
+                    <span class="dot1" onclick="currentSlide(2)"></span>
+                    <span class="dot1" onclick="currentSlide(3)"></span>
+                    <span class="dot1" onclick="currentSlide(4)"></span>
+                </div>
+        </div>
+        <!--odeljak 3-->
+        <div id="dodatno">
+            <h2>Vrnjački karneval</h2>
+            <br>
+            <br>
+            <p>
+                Kao dodatnu ponudu našeg kampa nudimo sedmodnevni boravak dece u Vrnjačkoj Banji za vreme nadaleko poznatog Vrnjačkog karnevala<span id="dugmići">...</span>
+                <span id="više">
+                    Deca će svaki dan u prilici da vide najrazličitija dešavanja poput dečijeg maskembala , pozorišnih predstava , izložbi , koncerata najpopularnijih regionalnih muzičkih zvezda itd. Pred posete festivalu 
+                    , deca će imati priliku da se upoznaju sa mnogim kulturnoistorijskim znamenitostima u Vrnjačkoj Banji i njenoj okolini . Deca će biti smeštena u hotelu "Breza" gde će im na raspolaganju biti bazen , igralište .
+                    Takođe hotel se nalazi u blizini šetališta na kome se može naći mnogo toga zanimljivog uključujući štandove sa suvenirima , slatkišima i arkadnim igrama . Tokom karnevala se mogu videti slavne old tajmere koji su obeležili prošlost automobila u Srbiji .
+                    Posebno mesto koje će privući pažnju je slavni most ljubavi pun katanaca kao glavnih simbola večne ljubavi .
+                </span>
+            </p>
+            <br>
+            <br>
+            <button onclick="myFunction2()" id="dugme3">Read more</button>
+            <br>
+            <br>
+            <div class="slideshow-container2">
+
+                <div class="mySlides2 fade">
+                    <img src="../Slike/slajd1.png" class="slike1">
+                    <div class="text">Most ljubavi</div>
+            </div>
+                
+                <div class="mySlides2 fade">
+                    <img src="../Slike/Slajd2.png" class="slike1">
+                    <div class="text">Hotel</div>
+            </div>
+                
+                <div class="mySlides2 fade">
+                    <img src="../Slike/Slika3.png" class="slike1">
+                    <div class="text">Bazen</div>
+                </div>
+
+                <div class="mySlides2 fade">
+                    <img src="../Slike/slika4.png" class="slike1">
+                    <div class="text">Šetalište</div>
+                </div>
+                <div class="mySlides2 fade">
+                    <img src="../Slike/Slika5.png" class="slike1">
+                    <div class="text">Manastir Žiča</div>
+                </div>
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot2" onclick="currentSlide(1)"></span>
+                <span class="dot2" onclick="currentSlide(2)"></span>
+                <span class="dot2" onclick="currentSlide(3)"></span>
+                <span class="dot2" onclick="currentSlide(4)"></span>
+                <span class="dot2" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </section>
+        <!--Skripte-->
+   <script src="../Javascript/script.js"></script>
+</body>
+</html>
